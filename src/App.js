@@ -6,10 +6,13 @@ import {
   withRouter
 } from "react-router-dom";
 
+// Components
+import Appbar from './Components/Appbar';
+
 function App() {
   return (
     <div>
-      <h1>NovaSoft</h1>
+      <Appbar />
     </div>
   );
 }
