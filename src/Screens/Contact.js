@@ -74,6 +74,7 @@ function Contact(props) {
                         paddingTop: 60,
                         paddingLeft: 40,
                         paddingRight: 80,
+                        paddingBottom: 60,
                         backgroundColor: 'transparent',
                         fontFamily: 'Quattrocento Sans,sans-serif',
                         backgroundColor: '#353b43',
@@ -83,7 +84,6 @@ function Contact(props) {
                         <Typography variant='h4'>
                             You Seem Nice... Let's Talk...!!!
                         </Typography>
-                        <br />
                         <br />
                         <br />
                         <Grid container>

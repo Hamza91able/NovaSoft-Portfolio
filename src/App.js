@@ -16,6 +16,7 @@ import Contact from './Screens/Contact';
 
 // Components
 import Appbar from './Components/Appbar';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       <Portfolio />
       <div style={{ height: 50 }} />
       <Contact />
+      <div style={{ height: 50 }} />
+      <Footer />
     </div>
   );
 }
