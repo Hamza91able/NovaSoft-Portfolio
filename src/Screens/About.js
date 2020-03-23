@@ -273,7 +273,6 @@ class About extends Component {
                                     </List>
                                 </Grid>
                             </Grid>
-
                         </Paper>
                     </Grid>
                 </Grid>
