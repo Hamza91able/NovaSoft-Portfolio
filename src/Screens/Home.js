@@ -76,7 +76,9 @@ export default function Home() {
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                         </p>
                     </div>
-                    <StyledButton />
+                    <StyledButton>
+                        Explore Us
+                    </StyledButton>
                 </div>
             </div>
         </React.Fragment>

@@ -12,6 +12,7 @@ import About from './Screens/About';
 import Services from './Screens/Services';
 import Skills from './Screens/Skills';
 import Portfolio from './Screens/Portfolio';
+import Contact from './Screens/Contact';
 
 // Components
 import Appbar from './Components/Appbar';
@@ -29,6 +30,8 @@ function App() {
       <Skills />
       <div style={{ height: 50 }} />
       <Portfolio />
+      <div style={{ height: 50 }} />
+      <Contact />
     </div>
   );
 }

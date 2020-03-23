@@ -3,11 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
     button: {
         color: 'white',
         width: 180,
@@ -26,13 +21,13 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function StyledButton() {
+export default function StyledButton(props) {
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
             <Button className={classes.button} variant='outlined'>
-                Explore Us
+                {props.children}
             </Button>
         </div>
     );
