@@ -11,11 +11,12 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles(theme => ({
     root: {
+        marginTop: -6,
         flexGrow: 1,
     },
     menuButton: {
         marginRight: theme.spacing(2),
-        color: 'black',
+        color: 'white',
         '&:hover': {
             color: 'rgb(5,170,228)',
             transition: '0.4s'
@@ -35,7 +36,8 @@ const useStyles = makeStyles(theme => ({
         letterSpacing: 2
     },
     appbar: {
-        backgroundColor: '#ffff',
+        backgroundColor: 'rgb(53, 59, 67)',
+        boxShadow: 'none'
     }
 }));
 

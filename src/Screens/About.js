@@ -232,7 +232,7 @@ class About extends Component {
                             <br />
                             <br />
                             <Grid container>
-                                <Grid item xs={6}>
+                                <Grid item xs={12} md={6}>
                                     <List>
                                         <ListItem>
                                             <ListItemAvatar>
@@ -252,7 +252,7 @@ class About extends Component {
                                         </ListItem>
                                     </List>
                                 </Grid>
-                                <Grid item xs={6}>
+                                <Grid item xs={12} md={6}>
                                     <List>
                                         <ListItem>
                                             <ListItemAvatar>
