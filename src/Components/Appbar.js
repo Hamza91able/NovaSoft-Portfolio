@@ -8,6 +8,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Popper from '@material-ui/core/Popper';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -38,11 +43,35 @@ const useStyles = makeStyles(theme => ({
     appbar: {
         backgroundColor: 'rgb(53, 59, 67)',
         boxShadow: 'none'
+    },
+    desktopButtons: {
+        display: 'none',
+        [theme.breakpoints.up("md")]: {
+            display: 'flex'
+        },
+    },
+    mobileMenu: {
+        display: 'none',
+        [theme.breakpoints.down("md")]: {
+            display: 'flex'
+        },
+    },
+    popper: {
+        backgroundColor: 'rgb(53, 59, 67)',
+        width: '100vw',
     }
 }));
 
 export default function ButtonAppBar() {
     const classes = useStyles();
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleClick = event => {
+        setAnchorEl(anchorEl ? null : event.currentTarget);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popper' : undefined;
 
     return (
         <React.Fragment>
@@ -57,11 +86,39 @@ export default function ButtonAppBar() {
                             <Typography variant="h6" className={classes.secondTitle}>
                                 Soft
                             </Typography>
-                            <Button className={classes.menuButton} color="inherit">Home</Button>
-                            <Button className={classes.menuButton} color="inherit">About Us</Button>
-                            <Button className={classes.menuButton} color="inherit">Services</Button>
-                            <Button className={classes.menuButton} color="inherit">Portfolio</Button>
-                            <Button className={classes.menuButton} color="inherit">Contact</Button>
+                            <div className={classes.desktopButtons}>
+                                <Button className={classes.menuButton} color="inherit">Home</Button>
+                                <Button className={classes.menuButton} color="inherit">About Us</Button>
+                                <Button className={classes.menuButton} color="inherit">Services</Button>
+                                <Button className={classes.menuButton} color="inherit">Portfolio</Button>
+                                <Button className={classes.menuButton} color="inherit">Contact</Button>
+                            </div>
+                            <div className={classes.mobileMenu}>
+                                <IconButton className={classes.menuButton} aria-describedby={id} onClick={handleClick}>
+                                    <MenuIcon />
+                                </IconButton>
+                                <Popper className={classes.popper} id={id} open={open} anchorEl={anchorEl}>
+                                    <Container maxWidth='sm'>
+                                        <List component="nav" aria-label="main mailbox folders">
+                                            <ListItem className={classes.menuButton} button>
+                                                <ListItemText primary="Home" />
+                                            </ListItem>
+                                            <ListItem className={classes.menuButton} button>
+                                                <ListItemText primary="About Us" />
+                                            </ListItem>
+                                            <ListItem className={classes.menuButton} button>
+                                                <ListItemText primary="Services" />
+                                            </ListItem>
+                                            <ListItem className={classes.menuButton} button>
+                                                <ListItemText primary="Portfolio" />
+                                            </ListItem>
+                                            <ListItem className={classes.menuButton} button>
+                                                <ListItemText primary="Contact" />
+                                            </ListItem>
+                                        </List>
+                                    </Container>
+                                </Popper>
+                            </div>
                         </Toolbar>
                     </Container>
                 </AppBar>

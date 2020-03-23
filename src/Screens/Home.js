@@ -18,6 +18,7 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.down("sm")]: {
             fontSize: 18,
+            marginTop: 40,
         },
     },
     secondaryHeadingContainer: {
@@ -43,7 +44,6 @@ const useStyles = makeStyles(theme => ({
         width: '100%',
         [theme.breakpoints.down("md")]: {
             height: '200%',
-            width: '150%',
         }
     }
 }));
