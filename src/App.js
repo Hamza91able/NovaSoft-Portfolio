@@ -33,7 +33,7 @@ function App() {
       <Portfolio />
       <div style={{ height: 50 }} />
       <Contact />
-      <div style={{ height: 50 }} />
+      <div style={{ height: 10 }} />
       <Footer />
     </div>
   );
