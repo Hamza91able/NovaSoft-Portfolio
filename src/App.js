@@ -9,6 +9,7 @@ import {
 //Screens
 import Home from './Screens/Home';
 import About from './Screens/About';
+import Services from './Screens/Services';
 
 // Components
 import Appbar from './Components/Appbar';
@@ -20,6 +21,8 @@ function App() {
       <Appbar />
       <div style={{ height: 50 }} />
       <About />
+      <div style={{ height: 50 }} />
+      <Services />
     </div>
   );
 }

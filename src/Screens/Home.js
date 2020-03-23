@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 
 // Components
 import StyledButton from '../Components/StyledButton';
 
 // Static
 import homeImage from '../Static/Images/home.jpg'
-import { Typography, Button } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     mainHeading: {
