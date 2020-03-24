@@ -1,10 +1,4 @@
 import React from 'react';
-import {
-  Switch,
-  Route,
-  Link,
-  withRouter
-} from "react-router-dom";
 
 //Screens
 import Home from './Screens/Home';
@@ -18,25 +12,61 @@ import Contact from './Screens/Contact';
 import Appbar from './Components/Appbar';
 import Footer from './Components/Footer';
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
 function App() {
+
+  const HomeRef = React.useRef(null);
+  const AboutRef = React.useRef(null);
+  const ServicesRef = React.useRef(null);
+  const SkillsRef = React.useRef(null);
+  const PortfoliRef = React.useRef(null);
+  const ContactRef = React.useRef(null);
+
+  const executeScrollToHome = () => scrollToRef(HomeRef);
+  const executeScrollToAbout = () => scrollToRef(AboutRef);
+  const executeScrollToServices = () => scrollToRef(ServicesRef);
+  const executeScrollToSkills = () => scrollToRef(SkillsRef);
+  const executeScrollToPortfolio = () => scrollToRef(PortfoliRef);
+  const executeScrollToContact = () => scrollToRef(ContactRef);
+
   return (
     <div>
-      <Home />
-      <Appbar />
+      <div ref={HomeRef}>
+        <Home executeScrollToServices={executeScrollToServices} />
+      </div>
+      <Appbar
+        executeScrollToHome={executeScrollToHome}
+        executeScrollToAbout={executeScrollToAbout}
+        executeScrollToServices={executeScrollToServices}
+        executeScrollToSkills={executeScrollToSkills}
+        executeScrollToPortfolio={executeScrollToPortfolio}
+        executeScrollToContact={executeScrollToContact}
+      />
       <div style={{ height: 50 }} />
-      <About />
+      <div ref={AboutRef}>
+        <About />
+      </div>
       <div style={{ height: 50 }} />
-      <Services />
+      <div ref={ServicesRef}>
+        <Services />
+      </div>
       <div style={{ height: 50 }} />
-      <Skills />
+      <div ref={SkillsRef}>
+        <Skills />
+      </div>
       <div style={{ height: 50 }} />
-      <Portfolio />
+      <div ref={PortfoliRef}>
+        <Portfolio />
+      </div>
       <div style={{ height: 50 }} />
-      <Contact />
+      <div ref={ContactRef}>
+        <Contact />
+      </div>
       <div style={{ height: 10 }} />
       <Footer />
     </div>
   );
 }
 
-export default withRouter(App);
+export default App;

@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -87,11 +87,12 @@ export default function ButtonAppBar() {
                                 Soft
                             </Typography>
                             <div className={classes.desktopButtons}>
-                                <Button className={classes.menuButton} color="inherit">Home</Button>
-                                <Button className={classes.menuButton} color="inherit">About Us</Button>
-                                <Button className={classes.menuButton} color="inherit">Services</Button>
-                                <Button className={classes.menuButton} color="inherit">Portfolio</Button>
-                                <Button className={classes.menuButton} color="inherit">Contact</Button>
+                                <Button onClick={props.executeScrollToHome} className={classes.menuButton} color="inherit">Home</Button>
+                                <Button onClick={props.executeScrollToAbout} className={classes.menuButton} color="inherit">About Us</Button>
+                                <Button onClick={props.executeScrollToServices} className={classes.menuButton} color="inherit">Services</Button>
+                                <Button onClick={props.executeScrollToSkills} className={classes.menuButton} color="inherit">Skills</Button>
+                                <Button onClick={props.executeScrollToPortfolio} className={classes.menuButton} color="inherit">Portfolio</Button>
+                                <Button onClick={props.executeScrollToContact} className={classes.menuButton} color="inherit">Contact</Button>
                             </div>
                             <div className={classes.mobileMenu}>
                                 <IconButton className={classes.menuButton} aria-describedby={id} onClick={handleClick}>
@@ -99,20 +100,23 @@ export default function ButtonAppBar() {
                                 </IconButton>
                                 <Popper className={classes.popper} id={id} open={open} anchorEl={anchorEl}>
                                     <Container maxWidth='sm'>
-                                        <List component="nav" aria-label="main mailbox folders">
-                                            <ListItem className={classes.menuButton} button>
+                                        <List onClick={() => setAnchorEl(null)} component="nav" aria-label="main mailbox folders">
+                                            <ListItem onClick={props.executeScrollToHome} className={classes.menuButton} button>
                                                 <ListItemText primary="Home" />
                                             </ListItem>
-                                            <ListItem className={classes.menuButton} button>
+                                            <ListItem onClick={props.executeScrollToAbout} className={classes.menuButton} button>
                                                 <ListItemText primary="About Us" />
                                             </ListItem>
-                                            <ListItem className={classes.menuButton} button>
+                                            <ListItem onClick={props.executeScrollToServices} className={classes.menuButton} button>
                                                 <ListItemText primary="Services" />
                                             </ListItem>
-                                            <ListItem className={classes.menuButton} button>
+                                            <ListItem onClick={props.executeScrollToSkills} className={classes.menuButton} button>
+                                                <ListItemText primary="Skills" />
+                                            </ListItem>
+                                            <ListItem onClick={props.executeScrollToPortfolio} className={classes.menuButton} button>
                                                 <ListItemText primary="Portfolio" />
                                             </ListItem>
-                                            <ListItem className={classes.menuButton} button>
+                                            <ListItem onClick={props.executeScrollToContact} className={classes.menuButton} button>
                                                 <ListItemText primary="Contact" />
                                             </ListItem>
                                         </List>
