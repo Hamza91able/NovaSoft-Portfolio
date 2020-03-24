@@ -7,7 +7,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
 
 // Components
 import Card from '../Components/Card';
@@ -187,7 +186,7 @@ class About extends Component {
                 <br />
                 <Grid container>
                     <Grid item xs={12} md={6}>
-                        <img src={AboutPic} style={{
+                        <img src={AboutPic} alt='about_pic' style={{
                             maxWidth: '100%',
                             maxHeight: '100%',
                             height: '100%',
@@ -202,7 +201,6 @@ class About extends Component {
                             paddingTop: 60,
                             paddingLeft: 40,
                             paddingRight: 80,
-                            backgroundColor: 'transparent',
                             fontFamily: 'Quattrocento Sans,sans-serif',
                             backgroundColor: '#353b43',
                             color: '#afbac4',

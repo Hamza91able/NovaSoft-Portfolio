@@ -107,7 +107,7 @@ function Contact(props) {
             </Container>
             <Grid container>
                 <Grid item xs={12} md={6}>
-                    <img src={ContactPic} style={{
+                    <img src={ContactPic} alt="contact_pic" style={{
                         maxWidth: '100%',
                         maxHeight: '100%',
                         height: '100%',
@@ -123,7 +123,6 @@ function Contact(props) {
                         paddingLeft: 40,
                         paddingRight: 80,
                         paddingBottom: 60,
-                        backgroundColor: 'transparent',
                         fontFamily: 'Quattrocento Sans,sans-serif',
                         backgroundColor: '#353b43',
                         color: '#afbac4',

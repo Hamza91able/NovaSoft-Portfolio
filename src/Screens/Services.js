@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
-import { Container, Grid, Typography, Toolbar, Divider, Paper } from '@material-ui/core';
-import { FaPencilRuler, FaAnchor, FaMobileAlt } from 'react-icons/fa';
-import { GiHorseHead, GiMarsPathfinder } from 'react-icons/gi'
-import { FiEdit3 } from 'react-icons/fi';
+import { Container, Grid, Typography, Toolbar, Divider } from '@material-ui/core';
+import { FaMobileAlt } from 'react-icons/fa';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import { MdLocalGroceryStore } from 'react-icons/md';
 import { FaWordpress } from 'react-icons/fa';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
 import HttpIcon from '@material-ui/icons/Http';
 import SearchIcon from '@material-ui/icons/Search';
 
 // Components
 import Card from '../Components/Card';
-
-// Static
-import AboutPic from '../Static/Images/about.jpg'
 
 class Services extends Component {
 

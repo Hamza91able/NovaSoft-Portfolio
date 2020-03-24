@@ -11,7 +11,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Popper from '@material-ui/core/Popper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 // Static
@@ -83,7 +82,7 @@ export default function ButtonAppBar(props) {
                 <AppBar className={classes.appbar} position={props.headerType}>
                     <Container maxWidth="lg">
                         <Toolbar>
-                            <img src={Logo} style={{ height: 32, width: 32, marignRight: 10 }} />
+                            <img src={Logo} alt="N" style={{ height: 32, width: 32, marignRight: 10 }} />
                             <Typography variant="h6" className={classes.title}>
                                 ova
                             </Typography>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Paper, Grid } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 
 // Components

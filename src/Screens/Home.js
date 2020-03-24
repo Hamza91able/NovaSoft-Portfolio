@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
@@ -60,7 +60,7 @@ class Home extends React.Component {
                     color: 'white',
                     textShadow: '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000',
                 }}>
-                    <img src={homeImage} className={classes.image} />
+                    <img src={homeImage} alt="home_image" className={classes.image} />
                     <div style={{
                         position: 'absolute',
                         top: '50%',
