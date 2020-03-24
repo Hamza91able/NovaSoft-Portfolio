@@ -1,12 +1,15 @@
 import React from 'react';
 import { withStyles } from "@material-ui/core/styles";
-import { Container, Grid, Typography, Toolbar, Divider, Paper, TextField, TextareaAutosize } from '@material-ui/core';
+import { Container, Grid, Typography, Toolbar, Divider, Paper, TextField, TextareaAutosize, Button, CircularProgress } from '@material-ui/core';
+import swal from 'sweetalert';
+import Axios from 'axios';
 
 // Components
 import StyledButton from '../Components/StyledButton';
 
 // Static
 import ContactPic from '../Static/Images/contact.jpg'
+import ContactUsEndPoint from '../Static/ContactUsEndPoint';
 
 const styles = {
     root: {
@@ -19,6 +22,51 @@ const styles = {
 
 function Contact(props) {
     const { classes } = props;
+
+    const [name, setName] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [subject, setSubject] = React.useState('');
+    const [message, setMessage] = React.useState('');
+    const [disableSubmitButton, setDisableSubmitButton] = React.useState(false);
+
+    const handleSubmit = () => {
+
+        let messageObject = {
+            // eslint-disable-next-line
+            ['Full Name']: name,
+            // eslint-disable-next-line
+            ['Email']: email,
+            // eslint-disable-next-line
+            ['Subject']: subject,
+            // eslint-disable-next-line
+            ['Message']: message
+        }
+
+        if (name !== '' && email !== '' && subject !== '' && message !== '') {
+            setDisableSubmitButton(true);
+
+            Axios.post(
+                ContactUsEndPoint,
+                messageObject,
+                { headers: { "Accept": "application/json" } }
+            )
+                .then(function (response) {
+                    setDisableSubmitButton(false);
+                    setName('');
+                    setEmail('');
+                    setSubject('');
+                    setMessage('');
+                    swal("Submitted", "Your message has been email. Please wait, we get back to you shortly.", "success");
+                })
+                .catch(function (error) {
+                    console.log(error);
+                    swal("Error", "Error Submitting Form. Please try again later..", "error");
+                    setDisableSubmitButton(false);
+                });
+        } else {
+            swal("Error", "Complete all information", "error");
+        }
+    }
 
     return (
         <React.Fragment>
@@ -99,6 +147,8 @@ function Contact(props) {
                                     InputProps={{
                                         className: classes.input
                                     }}
+                                    onChange={e => setName(e.target.value)}
+                                    value={name}
                                 />
                                 <br />
                                 <br />
@@ -115,6 +165,8 @@ function Contact(props) {
                                     InputProps={{
                                         className: classes.input
                                     }}
+                                    onChange={e => setEmail(e.target.value)}
+                                    value={email}
                                 />
                                 <br />
                                 <br />
@@ -131,6 +183,8 @@ function Contact(props) {
                                     InputProps={{
                                         className: classes.input
                                     }}
+                                    onChange={e => setSubject(e.target.value)}
+                                    value={subject}
                                 />
                                 <br />
                                 <br />
@@ -149,13 +203,22 @@ function Contact(props) {
                                     }}
                                     rowsMin={8}
                                     placeholder="Write Message"
+                                    onChange={e => setMessage(e.target.value)}
+                                    value={message}
                                 />
                                 <br />
                                 <br />
                             </Grid>
-                            <StyledButton>
-                                Send Message
-                            </StyledButton>
+                            {disableSubmitButton
+                                ?
+                                <Button style={{ color: 'white', }} variant='contained' color='secondary'>
+                                    <CircularProgress style={{ color: 'white', marginRight: 10 }} /> Sending...
+                                </Button>
+                                :
+                                <StyledButton handleSubmit={handleSubmit}>
+                                    Send Message
+                                </StyledButton>
+                            }
                         </Grid>
                     </Paper>
                 </Grid>

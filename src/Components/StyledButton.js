@@ -26,7 +26,7 @@ export default function StyledButton(props) {
 
     return (
         <div className={classes.root}>
-            <Button onClick={props.executeScrollToServices ? props.executeScrollToServices : null} className={classes.button} variant='outlined'>
+            <Button onClick={props.executeScrollToServices ? props.executeScrollToServices : props.handleSubmit} className={classes.button} variant='outlined'>
                 {props.children}
             </Button>
         </div>
