@@ -2,4 +2,4 @@
 
 Portfolio Webstie for NovaSoft
 
-Link: https://novasoft-portfolio.firebaseapp.com/
+Link: www.novasoft.tech
