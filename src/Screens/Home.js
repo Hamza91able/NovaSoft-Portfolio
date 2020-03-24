@@ -62,7 +62,7 @@ export default function Home() {
                 <img src={homeImage} className={classes.image} />
                 <div style={{
                     position: 'absolute',
-                    top: '40%',
+                    top: '50%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
                     width: '100%'
