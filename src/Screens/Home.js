@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
 // Components
@@ -8,7 +8,7 @@ import StyledButton from '../Components/StyledButton';
 // Static
 import homeImage from '../Static/Images/home.jpg'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = theme => ({
     mainHeading: {
         fontSize: '90px',
         fontWeight: 700,
@@ -18,7 +18,6 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.down("sm")]: {
             fontSize: 18,
-            marginTop: 40,
         },
     },
     secondaryHeadingContainer: {
@@ -46,41 +45,46 @@ const useStyles = makeStyles(theme => ({
             height: '200%',
         }
     }
-}));
+});
 
-export default function Home(props) {
-    const classes = useStyles();
+class Home extends React.Component {
 
-    return (
-        <React.Fragment>
-            <div style={{
-                position: 'relative',
-                textAlign: 'center',
-                color: 'white',
-                textShadow: '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000',
-            }}>
-                <img src={homeImage} className={classes.image} />
+    render() {
+        const { classes } = this.props;
+
+        return (
+            <div>
                 <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '100%'
+                    position: 'relative',
+                    textAlign: 'center',
+                    color: 'white',
+                    textShadow: '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000',
                 }}>
-                    <Typography variant='h1' className={classes.mainHeading}>
-                        WELCOME TO NOVASOFT SOLUTIONS
-                    </Typography>
-                    <div className={classes.secondaryHeadingContainer}>
-                        <p className={classes.secondayHeadingText}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
+                    <img src={homeImage} className={classes.image} />
+                    <div style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '100%'
+                    }}>
+                        <Typography variant='h1' className={classes.mainHeading}>
+                            WELCOME TO NOVASOFT SOLUTIONS
+                            </Typography>
+                        <div className={classes.secondaryHeadingContainer}>
+                            <p className={classes.secondayHeadingText}>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                </p>
+                        </div>
+                        <StyledButton executeScrollToServices={this.props.executeScrollToServices}>
+                            Explore Us
+                        </StyledButton>
                     </div>
-                    <StyledButton executeScrollToServices={props.executeScrollToServices}>
-                        Explore Us
-                    </StyledButton>
                 </div>
             </div>
-        </React.Fragment>
-    );
+        );
+    }
 };
+
+export default withStyles(useStyles)(Home);

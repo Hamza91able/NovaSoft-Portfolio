@@ -15,6 +15,7 @@ import Footer from './Components/Footer';
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
 function App() {
+  const [headerType, setHeaderType] = React.useState('static');
 
   const HomeRef = React.useRef(null);
   const AboutRef = React.useRef(null);
@@ -30,6 +31,20 @@ function App() {
   const executeScrollToPortfolio = () => scrollToRef(PortfoliRef);
   const executeScrollToContact = () => scrollToRef(ContactRef);
 
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  const handleScroll = () => {
+    if (window.pageYOffset > HomeRef.current.clientHeight) {
+      setHeaderType('fixed');
+    }
+
+    if (window.pageYOffset < HomeRef.current.clientHeight) {
+      setHeaderType('static');
+    }
+  }
+
   return (
     <div>
       <div ref={HomeRef}>
@@ -42,6 +57,7 @@ function App() {
         executeScrollToSkills={executeScrollToSkills}
         executeScrollToPortfolio={executeScrollToPortfolio}
         executeScrollToContact={executeScrollToContact}
+        headerType={headerType}
       />
       <div style={{ height: 50 }} />
       <div ref={AboutRef}>

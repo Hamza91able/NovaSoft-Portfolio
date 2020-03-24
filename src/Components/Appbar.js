@@ -77,7 +77,7 @@ export default function ButtonAppBar(props) {
         <React.Fragment>
             <CssBaseline />
             <div className={classes.root}>
-                <AppBar className={classes.appbar} position="static">
+                <AppBar className={classes.appbar} position={props.headerType}>
                     <Container maxWidth="lg">
                         <Toolbar>
                             <Typography variant="h6" className={classes.title}>
