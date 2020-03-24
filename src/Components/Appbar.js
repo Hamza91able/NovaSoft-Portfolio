@@ -14,6 +14,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
+// Static
+import Logo from '../Static/Images/logo.png';
+
 const useStyles = makeStyles(theme => ({
     root: {
         marginTop: -6,
@@ -80,8 +83,9 @@ export default function ButtonAppBar(props) {
                 <AppBar className={classes.appbar} position={props.headerType}>
                     <Container maxWidth="lg">
                         <Toolbar>
+                            <img src={Logo} style={{ height: 32, width: 32, marignRight: 10 }} />
                             <Typography variant="h6" className={classes.title}>
-                                Nova
+                                ova
                             </Typography>
                             <Typography variant="h6" className={classes.secondTitle}>
                                 Soft
