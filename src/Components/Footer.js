@@ -25,7 +25,12 @@ class Footer extends Component {
                         width: '100%',
                         marginTop: 10
                     }}>
-                        <div style={{ marginRight: 20 }}>
+                        <div onClick={() => {
+                            window.open(
+                                'https://www.facebook.com/NovaSoft110',
+                                '_blank'
+                            );
+                        }} style={{ marginRight: 20 }}>
                             <SocialMediaButton>
                                 <FaFacebookF style={{
                                     height: 32,
@@ -41,7 +46,12 @@ class Footer extends Component {
                                 }} />
                             </SocialMediaButton>
                         </div>
-                        <div style={{ marginRight: 20 }}>
+                        <div onClick={() => {
+                            window.open(
+                                'https://www.youtube.com/channel/UC4OI556vWFkEp20ImcLkeSg',
+                                '_blank'
+                            );
+                        }} style={{ marginRight: 20 }}>
                             <SocialMediaButton>
                                 <FaYoutube style={{
                                     height: 32,
