@@ -2,4 +2,4 @@
 
 Portfolio Webstie for NovaSoft
 
-Link: www.novasoft.tech
+Link: https://novasoft.tech/
