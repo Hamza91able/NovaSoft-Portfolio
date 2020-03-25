@@ -23,7 +23,8 @@ class Footer extends Component {
                         alignItems: 'center,',
                         display: 'inline-flex',
                         width: '100%',
-                        marginTop: 10
+                        marginTop: 10,
+                        marginLeft: 10,
                     }}>
                         <div onClick={() => {
                             window.open(

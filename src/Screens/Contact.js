@@ -16,7 +16,16 @@ const styles = {
         background: "black"
     },
     input: {
-        color: "white"
+        color: "white",
+        width: '100%'
+    },
+    textArea: {
+        width: '100%',
+        maxWidth: '100%',
+        minWidth: '100%',
+        color: 'white',
+        backgroundColor: 'rgb(53, 59, 67)',
+        padding: 10
     }
 };
 
@@ -81,19 +90,11 @@ function Contact(props) {
                         <Typography variant="h6" style={{
                             fontSize: 42,
                             fontWeight: 700,
-                            color: 'rgb(27,75,121)',
-                            letterSpacing: 2,
-                        }}>
-                            Get In
-                            </Typography>
-                        <Typography variant="h6" style={{
-                            fontSize: 42,
-                            fontWeight: 700,
                             color: 'rgb(5,170,228)',
                             letterSpacing: 2,
                             marginLeft: 10,
                         }}>
-                            Touch
+                            Get In Touch
                         </Typography>
                     </Toolbar>
                 </div>
@@ -139,13 +140,10 @@ function Contact(props) {
                                     id="standard-basic"
                                     label="Your Name"
                                     variant="filled"
-                                    style={{
-                                        width: '80%',
-                                        color: 'white'
-                                    }}
                                     InputProps={{
                                         className: classes.input
                                     }}
+                                    className={classes.input}
                                     onChange={e => setName(e.target.value)}
                                     value={name}
                                 />
@@ -157,13 +155,10 @@ function Contact(props) {
                                     id="standard-basic"
                                     label="Email Address"
                                     variant="filled"
-                                    style={{
-                                        width: '80%',
-                                        color: 'white'
-                                    }}
                                     InputProps={{
                                         className: classes.input
                                     }}
+                                    className={classes.input}
                                     onChange={e => setEmail(e.target.value)}
                                     value={email}
                                 />
@@ -175,13 +170,10 @@ function Contact(props) {
                                     id="standard-basic"
                                     label="Your Subject"
                                     variant="filled"
-                                    style={{
-                                        width: '80%',
-                                        color: 'white'
-                                    }}
                                     InputProps={{
                                         className: classes.input
                                     }}
+                                    className={classes.input}
                                     onChange={e => setSubject(e.target.value)}
                                     value={subject}
                                 />
@@ -193,13 +185,7 @@ function Contact(props) {
                                     id="standard-basic"
                                     label="Write Message"
                                     variant="filled"
-                                    style={{
-                                        width: '80%',
-                                        maxWidth: '80%',
-                                        color: 'white',
-                                        backgroundColor: 'rgb(53, 59, 67)',
-                                        padding: 10
-                                    }}
+                                    className={classes.textArea}
                                     rowsMin={8}
                                     placeholder="Write Message"
                                     onChange={e => setMessage(e.target.value)}

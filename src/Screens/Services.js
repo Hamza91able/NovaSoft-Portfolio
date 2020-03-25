@@ -26,20 +26,12 @@ class Services extends Component {
                             <Typography variant="h6" style={{
                                 fontSize: 42,
                                 fontWeight: 700,
-                                color: 'rgb(27,75,121)',
-                                letterSpacing: 2,
-                            }}>
-                                Our
-                            </Typography>
-                            <Typography variant="h6" style={{
-                                fontSize: 42,
-                                fontWeight: 700,
                                 color: 'rgb(5,170,228)',
                                 letterSpacing: 2,
                                 marginLeft: 10,
                             }}>
-                                Services
-                        </Typography>
+                                Our Services
+                            </Typography>
                         </Toolbar>
                     </div>
                     <br />

@@ -30,20 +30,12 @@ class About extends Component {
                             <Typography variant="h6" style={{
                                 fontSize: 42,
                                 fontWeight: 700,
-                                color: 'rgb(27,75,121)',
-                                letterSpacing: 2,
-                            }}>
-                                About
-                        </Typography>
-                            <Typography variant="h6" style={{
-                                fontSize: 42,
-                                fontWeight: 700,
                                 color: 'rgb(5,170,228)',
                                 letterSpacing: 2,
                                 marginLeft: 10,
                             }}>
-                                Us
-                        </Typography>
+                                About Us
+                            </Typography>
                         </Toolbar>
                     </div>
                     <br />
