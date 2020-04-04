@@ -75,10 +75,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            Looking to make a mark on the world wide web?
+                                            Whether you need a new design for a custom built website or
+                                            a design for a popular CMS platform you’ll find the perfect web design with our design services.<br /><br />
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>
@@ -116,10 +116,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            We showcase your business idea into a professional website.
+                                            We at NovaSoft are best in creating responsive websites and web templates.<br />
+                                            Our team at NovaSoft got them covered, they are fully updated with the third pary APIs.<br /><br />
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>
@@ -157,10 +157,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            Get a competitive edge in market with highly optimized and featured-rich Application Development Services.
+                                            We can develop customized applications according to customers requirement.
+                                            Whether it is an E-commerce app, Integration of a Web portal or a Social App.
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>
@@ -239,10 +239,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            NovaSoft offers the best SEO services that get your targeted traffic.
+                                            The money you spend goes towards managing your SEO campaigns.
+                                            Our SEO experts have been working for years and have a professional skillset with a ton of data to know which strategy suits your business.
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>
@@ -280,10 +280,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            Our team of dedicated WordPress developers incorporate scalable features that your business require.
+                                            We provide one stop shop solution to our clients covering WordPress theme design,
+                                            WordPress theme development, WordPress migration and Hosting.
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>

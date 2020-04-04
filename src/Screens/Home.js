@@ -69,13 +69,13 @@ class Home extends React.Component {
                         width: '100%'
                     }}>
                         <Typography variant='h1' className={classes.mainHeading}>
-                            WELCOME TO NOVASOFT SOLUTIONS
+                            WELCOME TO NOVASOFT
                             </Typography>
                         <div className={classes.secondaryHeadingContainer}>
                             <p className={classes.secondayHeadingText}>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </p>
+                                We belong to you and you belong to NovaSoft<br />
+                                Making your idea, a brand. Grow your work into a business model.
+                            </p>
                         </div>
                         <StyledButton executeScrollToServices={this.props.executeScrollToServices}>
                             Explore Us

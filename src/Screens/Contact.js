@@ -16,15 +16,16 @@ const styles = {
         background: "black"
     },
     input: {
-        color: "white",
+        backgroundColor: "white",
         width: '100%'
     },
     textArea: {
         width: '100%',
         maxWidth: '100%',
         minWidth: '100%',
-        color: 'white',
-        backgroundColor: 'rgb(53, 59, 67)',
+        // color: 'white',
+        // backgroundColor: 'rgb(53, 59, 67)',
+        backgroundColor: 'white',
         padding: 10
     }
 };

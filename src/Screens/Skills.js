@@ -68,7 +68,7 @@ class Skills extends Component {
                         }}>
                             <Typography variant='h4'>
                                 We’ve skilled in wide range of web and
-                                Other digital market tools.
+                                Other digital market tools, some of them are.
                             </Typography>
                             <br />
                             <br />

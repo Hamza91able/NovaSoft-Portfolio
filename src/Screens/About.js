@@ -79,10 +79,9 @@ class About extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            Exceed client's expectations by going beyond software to provide best solutions that transform data into knowledge,
+                                            enabling them to solve their problems.
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>
@@ -120,9 +119,8 @@ class About extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            To earn Global admiration and promote Pakistan as well as,
+                                            as an IT Outsourcer by delivering eminent Software Services and Products which can compete with Globle Products.
                                     </Typography>
                                     </div>
                                 </Grid>
@@ -161,10 +159,9 @@ class About extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    </Typography>
+                                            Our vision is to unleash the full potential of the amazing pool of the software engineers
+                                            in Pakistan by providing world class outsourcing services.
+                                        </Typography>
                                     </div>
                                 </Grid>
                             </Card>
@@ -203,20 +200,19 @@ class About extends Component {
                             </Typography>
                             <br />
                             <Typography variant='p'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                We strive to integrate tech-centred solutions into everyday life and make this planet a better place to live at!
                             </Typography>
                             <br />
                             <br />
                             <Typography variant='p'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                Our team of professionals has years’ long experience and expertise to bring life to your brand and product line.
+                                Our services are highly customized around users’ preferences and experiences.
                             </Typography>
                             <br />
                             <br />
                             <Typography variant='p'>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                Our services portfolio expand from clouding your data to representing it in the best words,
+                                with the right imagery, to the perfect mix of audience. We aim to reshape businesses into brands.
                             </Typography>
                             <br />
                             <br />
@@ -235,7 +231,7 @@ class About extends Component {
                                             <ListItemText primary="SEO Optimized"
                                                 secondary={
                                                     <Typography variant='inherit'>
-                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                        We maximize your ROI by driving potential traffic to your business.
                                                     </Typography>
                                                 }
                                             />
@@ -255,7 +251,7 @@ class About extends Component {
                                             <ListItemText primary="Easy Customization"
                                                 secondary={
                                                     <Typography variant='inherit'>
-                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                        We can personalize your website and take it to the next level with the Design.
                                                     </Typography>
                                                 }
                                             />
