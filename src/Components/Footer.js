@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Paper } from '@material-ui/core';
-import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 // Components
 import SocialMediaButton from '../Components/SocialMediaButton';
@@ -41,6 +41,19 @@ class Footer extends Component {
                         </div>
                         <div onClick={() => {
                             window.open(
+                                'https://www.instagram.com/novasoft110',
+                                '_blank'
+                            );
+                        }} style={{ marginRight: 20 }}>
+                            <SocialMediaButton>
+                                <FaInstagram style={{
+                                    height: 32,
+                                    width: 32,
+                                }} />
+                            </SocialMediaButton>
+                        </div>
+                        <div onClick={() => {
+                            window.open(
                                 'https://mobile.twitter.com/NovaSoft110',
                                 '_blank'
                             );
@@ -54,12 +67,12 @@ class Footer extends Component {
                         </div>
                         <div onClick={() => {
                             window.open(
-                                'https://www.youtube.com/channel/UC4OI556vWFkEp20ImcLkeSg',
+                                'https://www.linkedin.com/company/novasoft110',
                                 '_blank'
                             );
                         }} style={{ marginRight: 20 }}>
                             <SocialMediaButton>
-                                <FaYoutube style={{
+                                <FaLinkedinIn style={{
                                     height: 32,
                                     width: 32,
                                 }} />
@@ -67,12 +80,12 @@ class Footer extends Component {
                         </div>
                         <div onClick={() => {
                             window.open(
-                                'https://www.linkedin.com/company/novasoft110',
+                                'https://www.youtube.com/channel/UC4OI556vWFkEp20ImcLkeSg',
                                 '_blank'
                             );
                         }} style={{ marginRight: 20 }}>
                             <SocialMediaButton>
-                                <FaLinkedinIn style={{
+                                <FaYoutube style={{
                                     height: 32,
                                     width: 32,
                                 }} />
