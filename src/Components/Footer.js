@@ -39,7 +39,12 @@ class Footer extends Component {
                                 }} />
                             </SocialMediaButton>
                         </div>
-                        <div style={{ marginRight: 20 }}>
+                        <div onClick={() => {
+                            window.open(
+                                'https://mobile.twitter.com/NovaSoft110',
+                                '_blank'
+                            );
+                        }} style={{ marginRight: 20 }}>
                             <SocialMediaButton>
                                 <FaTwitter style={{
                                     height: 32,
@@ -60,7 +65,12 @@ class Footer extends Component {
                                 }} />
                             </SocialMediaButton>
                         </div>
-                        <div style={{ marginRight: 20 }}>
+                        <div onClick={() => {
+                            window.open(
+                                'https://www.linkedin.com/company/novasoft110',
+                                '_blank'
+                            );
+                        }} style={{ marginRight: 20 }}>
                             <SocialMediaButton>
                                 <FaLinkedinIn style={{
                                     height: 32,
