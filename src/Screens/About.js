@@ -204,16 +204,19 @@ class About extends Component {
                             </Typography>
                             <br />
                             <br />
+                            <br />
                             <Typography variant='p'>
                                 Our team of professionals has years’ long experience and expertise to bring life to your brand and product line.
                                 Our services are highly customized around users’ preferences and experiences.
                             </Typography>
                             <br />
                             <br />
+                            <br />
                             <Typography variant='p'>
                                 Our services portfolio expand from clouding your data to representing it in the best words,
                                 with the right imagery, to the perfect mix of audience. We aim to reshape businesses into brands.
                             </Typography>
+                            <br />
                             <br />
                             <br />
                             <br />

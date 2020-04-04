@@ -9,7 +9,7 @@ import StyledButton from '../Components/StyledButton';
 
 // Static
 import ContactPic from '../Static/Images/contact.jpg'
-import ContactUsEndPoint from '../Static/ContactUsEndPoint';
+// import ContactUsEndPoint from '../Static/ContactUsEndPoint';
 
 const styles = {
     root: {
@@ -52,30 +52,30 @@ function Contact(props) {
             ['Message']: message
         }
 
-        if (name !== '' && email !== '' && subject !== '' && message !== '') {
-            setDisableSubmitButton(true);
+        // if (name !== '' && email !== '' && subject !== '' && message !== '') {
+        //     setDisableSubmitButton(true);
 
-            Axios.post(
-                ContactUsEndPoint,
-                messageObject,
-                { headers: { "Accept": "application/json" } }
-            )
-                .then(function (response) {
-                    setDisableSubmitButton(false);
-                    setName('');
-                    setEmail('');
-                    setSubject('');
-                    setMessage('');
-                    swal("Submitted", "Your message has been email. Please wait, we get back to you shortly.", "success");
-                })
-                .catch(function (error) {
-                    console.log(error);
-                    swal("Error", "Error Submitting Form. Please try again later..", "error");
-                    setDisableSubmitButton(false);
-                });
-        } else {
-            swal("Error", "Complete all information", "error");
-        }
+        //     Axios.post(
+        //         ContactUsEndPoint,
+        //         messageObject,
+        //         { headers: { "Accept": "application/json" } }
+        //     )
+        //         .then(function (response) {
+        //             setDisableSubmitButton(false);
+        //             setName('');
+        //             setEmail('');
+        //             setSubject('');
+        //             setMessage('');
+        //             swal("Submitted", "Your message has been email. Please wait, we get back to you shortly.", "success");
+        //         })
+        //         .catch(function (error) {
+        //             console.log(error);
+        //             swal("Error", "Error Submitting Form. Please try again later..", "error");
+        //             setDisableSubmitButton(false);
+        //         });
+        // } else {
+        //     swal("Error", "Complete all information", "error");
+        // }
     }
 
     return (
