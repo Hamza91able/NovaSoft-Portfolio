@@ -75,9 +75,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Looking to make a mark on the world wide web?
-                                            Whether you need a new design for a custom built website or
-                                            a design for a popular CMS platform you’ll find the perfect web design with our design services.<br /><br />
+                                            Looking for a perfect Web design for your website.
+                                            It looks like you're on the right page.
+                                            Novasoft provides purely unique designs for your website which perfectly describe your website.
+                                            Whereas self-adaptable to all media screens that ever exist.<br /><br />
                                         </Typography>
                                     </div>
                                 </Grid>
@@ -116,9 +117,9 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            We showcase your business idea into a professional website.
-                                            We at NovaSoft are best in creating responsive websites and web templates.<br />
-                                            Our team at NovaSoft got them covered, they are fully updated with the third pary APIs.<br /><br />
+                                            We convert your business idea into a fully-functional Web app.
+                                            Novasoft handles every website just like their own with thousands of ideas we can turn your website into an attractive one.
+                                            From the front to the back we have diversity of implementation methods.<br /><br />
                                         </Typography>
                                     </div>
                                 </Grid>
@@ -157,9 +158,9 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Get a competitive edge in market with highly optimized and featured-rich Application Development Services.
-                                            We can develop customized applications according to customers requirement.
-                                            Whether it is an E-commerce app, Integration of a Web portal or a Social App.
+                                            Novasoft provide Hybrid application development services to our customers.
+                                            As everything is getting smarter so does our ways.
+                                            Let’s build a modern mobile application with a cross-browser functionality with highly maintained UI/UX which will attracts every user to your application.<br /><br />
                                         </Typography>
                                     </div>
                                 </Grid>
@@ -198,9 +199,10 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            Novasoft provides a variety of ideas to have a digital store in a modern world with modern ways.
+                                            Make your products enlighten with our services. We build a greater,
+                                            better and extremely well-organized e-commerce store.
+                                            Let’s your product jump into the marker with our service.<br /><br />
                                     </Typography>
                                     </div>
                                 </Grid>
@@ -239,9 +241,9 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            NovaSoft offers the best SEO services that get your targeted traffic.
-                                            The money you spend goes towards managing your SEO campaigns.
-                                            Our SEO experts have been working for years and have a professional skillset with a ton of data to know which strategy suits your business.
+                                            Worried about your website ranking? Well not anymore.
+                                            Novasoft has SEO professionals that provide the most advanced and effective SEO services for your website.
+                                            Our expert’s strategy and the implementation makes any website road to the top in just less time.<br /><br />
                                         </Typography>
                                     </div>
                                 </Grid>
@@ -280,9 +282,9 @@ class Services extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Our team of dedicated WordPress developers incorporate scalable features that your business require.
-                                            We provide one stop shop solution to our clients covering WordPress theme design,
-                                            WordPress theme development, WordPress migration and Hosting.
+                                            Our WordPress developers provide every possible solution for your WordPress website.
+                                            We provide exclusive themes, customization and plugin integration which makes your website even more attractive and functional.
+                                            Whether you need customization, migration on WordPress we provide services for all.
                                         </Typography>
                                     </div>
                                 </Grid>

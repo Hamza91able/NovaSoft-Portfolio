@@ -109,8 +109,8 @@ class Footer extends Component {
                         width: '100%',
                         marginTop: 10
                     }}>
-                        Deisgn and Developed by Muhammad Hamza Khan
-                        <br />
+                        {/* Deisgn and Developed by Novasoft */}
+                        {/* <br /> */}
                         Copyright © 2020. All Rights Reserved.
                         <br />
                         <br />

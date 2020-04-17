@@ -11,7 +11,8 @@ import homeImage from '../Static/Images/home.jpg'
 const useStyles = theme => ({
     mainHeading: {
         fontSize: '90px',
-        fontWeight: 700,
+        // fontWeight: 700,
+        fontWeight: 500,
         marginBottom: 10,
         [theme.breakpoints.only("md")]: {
             fontSize: 50,
@@ -27,7 +28,8 @@ const useStyles = theme => ({
         width: '100%',
     },
     secondayHeadingText: {
-        fontSize: '34px',
+        // fontSize: '34px',
+        fontSize: '28px',
         width: '70%',
         fontWeight: 600,
         [theme.breakpoints.only("md")]: {
@@ -73,8 +75,7 @@ class Home extends React.Component {
                             </Typography>
                         <div className={classes.secondaryHeadingContainer}>
                             <p className={classes.secondayHeadingText}>
-                                We belong to you and you belong to NovaSoft<br />
-                                Making your idea, a brand. Grow your work into a business model.
+                                Make it perfect with NovaSoft
                             </p>
                         </div>
                         <StyledButton executeScrollToServices={this.props.executeScrollToServices}>

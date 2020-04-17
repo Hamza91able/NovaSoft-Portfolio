@@ -32,7 +32,7 @@ class Skills extends Component {
                                 letterSpacing: 2,
                                 marginLeft: 10,
                             }}>
-                                Our Skills
+                                Our Expertise
                             </Typography>
                         </Toolbar>
                     </div>
@@ -67,8 +67,8 @@ class Skills extends Component {
                             borderRadius: 0,
                         }}>
                             <Typography variant='h4'>
-                                We’ve skilled in wide range of web and
-                                Other digital market tools, some of them are.
+                                We have expertise on various advanced platforms,
+                                check which suits you best.
                             </Typography>
                             <br />
                             <br />

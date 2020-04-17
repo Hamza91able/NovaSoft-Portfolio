@@ -79,8 +79,10 @@ class About extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Exceed client's expectations by going beyond software to provide best solutions that transform data into knowledge,
-                                            enabling them to solve their problems.
+                                            Our mission is to push the limits for IT by providing unique and advance working solutions
+                                            to every business struggling to the top.
+                                            <br />
+                                            <br />
                                         </Typography>
                                     </div>
                                 </Grid>
@@ -119,8 +121,8 @@ class About extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            To earn Global admiration and promote Pakistan as well as,
-                                            as an IT Outsourcer by delivering eminent Software Services and Products which can compete with Globle Products.
+                                            Our plan is to be recognized globally as one of the best Pakistan’s IT services provider.
+                                            Pushing our products and services to reach on the international level will be one of our priority.
                                     </Typography>
                                     </div>
                                 </Grid>
@@ -159,8 +161,8 @@ class About extends Component {
                                         marginTop: 10
                                     }}>
                                         <Typography>
-                                            Our vision is to unleash the full potential of the amazing pool of the software engineers
-                                            in Pakistan by providing world class outsourcing services.
+                                            Our vision is to develop a perfect environment which will be used to develop
+                                            extraordinary products or solutions which can be used use by the people around the world.
                                         </Typography>
                                     </div>
                                 </Grid>
@@ -200,23 +202,28 @@ class About extends Component {
                             </Typography>
                             <br />
                             <Typography variant='p'>
-                                We strive to integrate tech-centred solutions into everyday life and make this planet a better place to live at!
+                                We focused a lot to put a perfect idea on the table to provide stable and a perfect plan for your business,
+                                which can run smoothly in today’s world.
                             </Typography>
                             <br />
+                            <br />
+                            {/*  */}
+                            {/* <br /> */}
+                            <Typography variant='p'>
+                                Apart from professional experience our developers have the potential to transform any idea into code.
+                                Our services are unique because we provide every possible outcome for our clients and the promise to make it possible.
+                            </Typography>
                             <br />
                             <br />
                             <Typography variant='p'>
-                                Our team of professionals has years’ long experience and expertise to bring life to your brand and product line.
-                                Our services are highly customized around users’ preferences and experiences.
+                                We convert the business into a brand, our services are much flexible which fulfills promising results.
+                                We are always available on your back with our full support.
                             </Typography>
-                            <br />
                             <br />
                             <br />
                             <Typography variant='p'>
-                                Our services portfolio expand from clouding your data to representing it in the best words,
-                                with the right imagery, to the perfect mix of audience. We aim to reshape businesses into brands.
+                                Let’s change the face of your business, we can take your business to the new heights.
                             </Typography>
-                            <br />
                             <br />
                             <br />
                             <br />
@@ -234,7 +241,7 @@ class About extends Component {
                                             <ListItemText primary="SEO Optimized"
                                                 secondary={
                                                     <Typography variant='inherit'>
-                                                        We maximize your ROI by driving potential traffic to your business.
+                                                        We maximize the organic traffic on your website by using premium approaches.
                                                     </Typography>
                                                 }
                                             />
@@ -254,7 +261,7 @@ class About extends Component {
                                             <ListItemText primary="Easy Customization"
                                                 secondary={
                                                     <Typography variant='inherit'>
-                                                        We can personalize your website and take it to the next level with the Design.
+                                                        We can customize your complete website with modern design to make it more beautiful.
                                                     </Typography>
                                                 }
                                             />

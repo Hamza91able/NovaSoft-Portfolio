@@ -95,7 +95,7 @@ function Contact(props) {
                             letterSpacing: 2,
                             marginLeft: 10,
                         }}>
-                            Get In Touch
+                           Lets Share Some Words
                         </Typography>
                     </Toolbar>
                 </div>
@@ -131,7 +131,7 @@ function Contact(props) {
                         borderRadius: 0,
                     }}>
                         <Typography variant='h4'>
-                            You Seem Nice... Let's Talk...!!!
+                            Have a word with our Analyst.
                         </Typography>
                         <br />
                         <br />
