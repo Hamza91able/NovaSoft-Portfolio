@@ -94,7 +94,7 @@ export default function ButtonAppBar(props) {
                                 <Button onClick={props.executeScrollToAbout} className={classes.menuButton} color="inherit">About Us</Button>
                                 <Button onClick={props.executeScrollToServices} className={classes.menuButton} color="inherit">Services</Button>
                                 <Button onClick={props.executeScrollToSkills} className={classes.menuButton} color="inherit">Skills</Button>
-                                <Button onClick={props.executeScrollToPortfolio} className={classes.menuButton} color="inherit">Portfolio</Button>
+                                {/* <Button onClick={props.executeScrollToPortfolio} className={classes.menuButton} color="inherit">Portfolio</Button> */}
                                 <Button onClick={props.executeScrollToContact} className={classes.menuButton} color="inherit">Contact</Button>
                             </div>
                             <div className={classes.mobileMenu}>
@@ -116,9 +116,9 @@ export default function ButtonAppBar(props) {
                                             <ListItem onClick={props.executeScrollToSkills} className={classes.menuButton} button>
                                                 <ListItemText primary="Skills" />
                                             </ListItem>
-                                            <ListItem onClick={props.executeScrollToPortfolio} className={classes.menuButton} button>
+                                            {/* <ListItem onClick={props.executeScrollToPortfolio} className={classes.menuButton} button>
                                                 <ListItemText primary="Portfolio" />
-                                            </ListItem>
+                                            </ListItem> */}
                                             <ListItem onClick={props.executeScrollToContact} className={classes.menuButton} button>
                                                 <ListItemText primary="Contact" />
                                             </ListItem>

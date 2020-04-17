@@ -21,14 +21,14 @@ function App() {
   const AboutRef = React.useRef(null);
   const ServicesRef = React.useRef(null);
   const SkillsRef = React.useRef(null);
-  const PortfoliRef = React.useRef(null);
+  // const PortfoliRef = React.useRef(null);
   const ContactRef = React.useRef(null);
 
   const executeScrollToHome = () => scrollToRef(HomeRef);
   const executeScrollToAbout = () => scrollToRef(AboutRef);
   const executeScrollToServices = () => scrollToRef(ServicesRef);
   const executeScrollToSkills = () => scrollToRef(SkillsRef);
-  const executeScrollToPortfolio = () => scrollToRef(PortfoliRef);
+  // const executeScrollToPortfolio = () => scrollToRef(PortfoliRef);
   const executeScrollToContact = () => scrollToRef(ContactRef);
 
   React.useEffect(() => {
@@ -55,7 +55,7 @@ function App() {
         executeScrollToAbout={executeScrollToAbout}
         executeScrollToServices={executeScrollToServices}
         executeScrollToSkills={executeScrollToSkills}
-        executeScrollToPortfolio={executeScrollToPortfolio}
+        // executeScrollToPortfolio={executeScrollToPortfolio}
         executeScrollToContact={executeScrollToContact}
         headerType={headerType}
       />
@@ -72,9 +72,9 @@ function App() {
         <Skills />
       </div>
       <div style={{ height: 50 }} />
-      <div ref={PortfoliRef}>
+      {/* <div ref={PortfoliRef}>
         <Portfolio />
-      </div>
+      </div> */}
       <div style={{ height: 50 }} />
       <div ref={ContactRef}>
         <Contact />
